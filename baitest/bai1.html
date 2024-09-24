@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+			integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<title>Bài tập 4</title>
+		<style>
+			.container {
+				display: flex;
+				justify-content: space-between;
+				background: #fff2cd;
+				border: 1px solid #cfba7f;
+				align-items: center;
+				padding: 4px 20px;
+				width: 100%;
+			}
+
+			.menu {
+				display: flex;
+				
+			}
+
+			.sub-menu {
+				display: flex;
+				
+				
+				margin: 0px 16px;
+			}
+
+			
+
+			.others {
+				display: flex;
+				align-items: center;
+			}
+
+			.notification {
+				margin-right: 30px;
+			}
+
+			.avatar {
+				width: 40px;
+				height: 40px;
+				background: #d5e8d4;
+				border-radius: 50%;
+				border: 1px solid #a6c594;
+			}
+			.avashop {
+    display: flex;
+    align-items: center;
+}
+
+.myshop {
+    margin-left: 8px;
+}
+.mycart {
+    border: 1px solid #030e02;
+    background: #d5e8d4;
+    padding: 1px 8px;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+.categories {
+    border: 1px solid black;
+    width: 19%;
+	margin: 25px;
+	height: 250px;
+}
+
+.tieude {margin-bottom: 10px;}
+.check {
+    padding: 4px;
+    /* margin: 2px; */
+}
+
+button.check.show {
+    background: #00ffee38;
+    margin: 7px;
+    width: 80%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.display {
+    display: flex;
+    padding: 20px 30px;
+}
+
+.ngoai {
+    display: flex;
+    border: 1px solid;
+    height: 1%;
+    width: 95%;
+    margin: 25px;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 15px;
+}
+
+.enter {
+    border: 1px solid black;
+    height: 23px;
+    margin-left: 5px;
+    border-radius: 4px;
+    padding: 1px;
+    padding-left: 3px;
+    opacity: 0.4;
+}
+
+.search {
+    text-align: center;
+}
+i.fa-duotone.fa-solid.fa-square-check {
+    margin-right: 6px;
+}
+
+i.fa-sharp.fa-solid.fa-magnifying-glass {
+    margin-left: 50px;
+}
+
+.sort {
+    display: flex;
+    justify-content: flex-end;
+    width: 65%;
+}
+
+.sortby {
+    border: 1px solid;
+    margin-right: 20px;
+    /* height: 23px; */
+    text-align: center;
+    border-radius: 4px;
+    padding: 2px;
+    opacity: 0.4;
+}
+
+select {
+    margin-right: 5px;
+}
+.ngoaiva8anh {
+    width: 1400px;
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+}
+
+.boc8div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.image {
+    text-align: center;
+    border: 1px solid #0b1018;
+    background: #ecf1f9;
+    margin: 21px;
+    padding: 75px 90px;
+}
+.box {
+}
+
+.lorem {
+    margin: 10px 20px;
+}
+
+.sodep {color: blue;}
+
+.phantram {
+    color: red;
+}
+
+.buton-5 {
+    display: flex;
+    margin: 10px;
+    justify-content: space-evenly;
+    width: 150px;
+}
+
+.buton-1 {
+    border: 1px solid;
+    width: 20px;
+    text-align: center;
+    opacity: 0.4;
+    border-radius: 3px;
+}
+
+.buton-3 {
+    border: 1px solid;
+    width: 20px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.buton-4 {
+    border: 1px solid;
+    width: 25px;
+    border-radius: 3px;
+	text-align: center;
+}
+.\31 29 {
+    display: flex;
+    justify-content: space-between;
+	
+	margin: 10px 20px;
+
+}
+.dongcuoi {
+    border: 1px solid orange;
+    padding: 10px;
+    background: #fefbf4;
+}
+
+.nhanhhai {
+    display: flex;
+    margin: 20px;
+}
+
+.nhanhmot {
+    padding-left: 20px;
+}
+
+.sdt {
+    margin-left: 50px;
+}
+
+
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="avashop">
+				<div class="avatar"></div>
+				<div class="myshop">My Shop</div>
+			</div>
+			<div class="menu">
+				<div class="sub-menu">Home</div>
+				<div class="sub-menu">About us</div>
+				<div class="sub-menu"></i>Contact</div>
+				<div class="mycart">My cart(0)</div>
+			</div>
+		</div>
+<div class="display">
+		<div class="categories">
+			<div class="check tieude">Categories</div>
+			<div class="check" ><i class="fa-duotone fa-solid fa-square-check"></i>Devices	</div>
+			<div class="check"><i class="fa-duotone fa-solid fa-square-check"></i>Funitures</div>
+			<div class="check"><i class="fa-duotone fa-solid fa-square-check"></i>Cloths	</div>
+			<div class="check"><i class="fa-duotone fa-solid fa-square-check"></i>Foods & Drink</div>
+			<div class="check"><i class="fa-duotone fa-solid fa-square-check"></i>Materials</div>
+			<div class="check"><i class="fa-duotone fa-solid fa-square-check"></i>Computers</div>
+
+			<button class="check show">Show more ...</button>
+
+			
+		</div>
+
+	<div class="ngoaiva8anh">
+		<div class="ngoai">
+			<div class="enter">
+			<div class="search">Enter keyword to search <i class="fa-sharp fa-solid fa-magnifying-glass"></i></div>
+			</div>
+
+			<div class="sort">
+				<div class="sortby">Sort by
+				<select></select>
+				</div>
+				<div class="sortby">
+				Order by
+				<select></select>
+				</div>
+			</div>
+		</div>
+
+	<div class="boc8div">
+
+		<div class="box">
+		<div class="image">IMAGE</div>
+		<div class="lorem">Lorem ipsum dolor</div>
+
+		<div class="129">
+			<div class="sodep">$129.01</div>
+			<div class="phantram"><select></select> 10%</div>
+		</div>
+	</div>
+	<div class="box">
+		<div class="image">IMAGE</div>
+		<div class="lorem">Lorem ipsum dolor</div>
+
+		<div class="129">
+			<div class="sodep">$129.01</div>
+			<div class="phantram"><select></select> 10%</div>
+		</div>
+	</div>
+	<div class="box">
+		<div class="image">IMAGE</div>
+		<div class="lorem">Lorem ipsum dolor</div>
+
+		<div class="129">
+			<div class="sodep">$129.01</div>
+			<div class="phantram"><select></select> 10%</div>
+		</div>
+	</div>
+	<div class="box">
+		<div class="image">IMAGE</div>
+		<div class="lorem">Lorem ipsum dolor</div>
+
+		<div class="129">
+			<div class="sodep">$129.01</div>
+			<div class="phantram"><select></select> 10%</div>
+		</div>
+	</div>
+	<div class="box">
+		<div class="image">IMAGE</div>
+		<div class="lorem">Lorem ipsum dolor</div>
+
+		<div class="129">
+			<div class="sodep">$129.01</div>
+			<div class="phantram"><select></select> 10%</div>
+		</div>
+	</div>
+	<div class="box">
+		<div class="image">IMAGE</div>
+		<div class="lorem">Lorem ipsum dolor</div>
+
+		<div class="129">
+			<div class="sodep">$129.01</div>
+			<div class="phantram"><select></select> 10%</div>
+		</div>
+	</div>
+	<div class="box">
+		<div class="image">IMAGE</div>
+		<div class="lorem">Lorem ipsum dolor</div>
+
+		<div class="129">
+			<div class="sodep">$129.01</div>
+			<div class="phantram"><select></select> 10%</div>
+		</div>
+	</div>
+	<div class="box">
+		<div class="image">IMAGE</div>
+		<div class="lorem">Lorem ipsum dolor</div>
+
+		<div class="129">
+			<div class="sodep">$129.01</div>
+			<div class="phantram"><select></select> 10%</div>
+		</div>
+	</div>
+
+
+
+	</div>
+	<div class="buton-5">
+		<div class="buton-1">1</div>
+		<div class="buton-3">2</div>
+		<div class="buton-3">3</div>
+		<div class="buton-4">...</div>
+		<div class="buton-3">50</div>
+	</div>
+
+</div>
+		
+</div>
+<header>
+	<div class="dongcuoi">
+		<div class="nhanhmot">
+			<div class="shopcuoi">My Shop</div>
+	</div>
+			<div class="nhanhhai">
+				<div class="diachi"><i class="fa-duotone fa-solid fa-location-dot"></i> 22C Somewhere, Ha Noi</div>
+				<div class="sdt"><i class="fa-duotone fa-solid fa-phone"></i> 099876543210</div>
+			</div>
+	
+	</div>			
+</header>
+	</body>
+</html>
